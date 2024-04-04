@@ -1,3 +1,24 @@
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(0deg,rgb(141, 161, 226),rgb(20, 177, 151) 100%);
+    display: grid;
+    place-items: center;
+    & .Tarjeta{
+        height: 400px;
+        width: 50%;
+        background-color: rgb(250, 249, 248);
+        border-radius: 20px;
+        padding: 8px;
+        box-shadow: 5px 20px 15px -3px black;
+    }
 }
