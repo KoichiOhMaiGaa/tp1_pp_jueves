@@ -7,6 +7,19 @@ body{
     height: 100vh;
     width: 100%;
 }
+/* -----------------colors--------------- */
+.negro{
+    background-color: black;
+}
+.rojo{
+    background-color: red;
+}
+.verde{
+    background-color: green;
+}
+.violeta{
+    background-color: violet;
+}
 .container{
     height: 100%;
     width: 100%;
@@ -14,11 +27,55 @@ body{
     display: grid;
     place-items: center;
     & .Tarjeta{
-        height: 400px;
+        height: 550px;
         width: 50%;
+        max-width: 350px;
         background-color: rgb(250, 249, 248);
         border-radius: 20px;
         padding: 8px;
         box-shadow: 5px 20px 15px -3px black;
+
+        & .encabezao{
+            height: 100px;
+            width: 100%;
+            background-color: #ccd6d0;
+            padding: 10px;
+            border-radius: 12px 12px 0 0;
+        }
+        & .producto{
+            height: 180px;
+            width: 100%;
+            background-color: #e1e8ed;
+            padding: 10px;
+            & ul.sel_colores{
+             
+             justify-content: center;
+             display: flex;
+             & li{
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                list-style: none;
+             }
+             & li:hover{
+                transform:scale(200);
+                cursor: pointer;
+             }
+            }
+        }
+        & .desc_prod{
+            height: 180px;
+            width: 100%;
+            background-color: #55acee;
+            padding: 10px;
+            
+        }
+        & .botonera{
+            height: 74px;
+            width: 100%;
+            background-color: #2881bb;
+            padding: 10px;
+            border-radius: 0 0 12px 12px ;
+        }
     }
 }
