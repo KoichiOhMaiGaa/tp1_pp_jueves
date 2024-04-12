@@ -44,6 +44,7 @@ body{
     box-shadow: 5px 20px 15px -3px rgba(0, 0, 0, 0.5);
     & .encabezado:hover{
         height: 300px;
+        overflow: visible;
         transition: 2s ease-in-out;
     }
 }
@@ -59,14 +60,18 @@ body{
         & .icon{
           z-index: 1;
           position:absolute;
+          color: azure;
 
         }
         & .imagen_prod{
             position: absolute;
+            opacity: 1;
             width: 100%;
             left: 0;
             top: 0;
             z-index: 0;
+            border-radius: 14px;
+            box-shadow: 0 0 50px 4400px rgba(0, 0, 0, 0.671);
             transition: 2s ease-in-out;
         }
         
@@ -175,6 +180,6 @@ button:hover{
 .fondo-rojo{background-color: chartreuse;}
 @media screen and (max-width: 600px){
     .container{
-        background: linear-gradient(#21db49 0%, #292f33 100%);
+        background: linear-gradient(#21db49 0%, #ffffff 100%);
     }
 }
